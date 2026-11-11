@@ -2,11 +2,84 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework1</title>
+    <title>Сайт мини-игр</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Домашнее задание</h1>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="header__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
+            <p class="header__text">
+                Тебе предстоит пройти несколько увлекательных игр. <br>
+                Если готов, нажимай <span class="header__text-bold">«Поехали!»</span> и <span class="header__text-bold">приступай</span>.
+            </p>
+            <a href="#games" class="header__button">Поехали!</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="games center" id="games">
+            <h2 class="games__title">Об играх</h2>
+            <p class="games__description">
+                В моей коллекции представлено 6 игр на разные темы. <br>
+                Игры несложные — в них может поиграть каждый. <br>
+                Все игры доступны для пользования.
+            </p>
+
+            <div class="games__grid">
+                <a href="#game-1" class="game-card">
+                    <img src="img/game-1.png" alt="Угадай число" class="game-card__img">
+                    <div class="game-card__content">
+                        <span class="game-card__tag">Игра №1</span>
+                        <h3 class="game-card__title">Угадай число</h3>
+                    </div>
+                </a>
+
+                <a href="#game-2" class="game-card">
+                    <img src="img/game-2.png" alt="Простая арифметика" class="game-card__img">
+                    <div class="game-card__content">
+                        <span class="game-card__tag">Игра №2</span>
+                        <h3 class="game-card__title">Простая <br>арифметика</h3>
+                    </div>
+                </a>
+
+                <a href="#game-3" class="game-card">
+                    <img src="img/game-3.png" alt="Переверни текст" class="game-card__img">
+                    <div class="game-card__content">
+                        <span class="game-card__tag">Игра №3</span>
+                        <h3 class="game-card__title">Переверни <br>текст</h3>
+                    </div>
+                </a>
+
+                <a href="#game-4" class="game-card">
+                    <img src="img/game-4.png" alt="Камень, ножницы, бумага" class="game-card__img">
+                    <div class="game-card__content">
+                        <span class="game-card__tag">Игра №4</span>
+                        <h3 class="game-card__title">Камень, <br>ножницы, <br>бумага</h3>
+                    </div>
+                </a>
+
+                <a href="#game-5" class="game-card">
+                    <img src="img/game-5.png" alt="Простая викторина" class="game-card__img">
+                    <div class="game-card__content">
+                        <span class="game-card__tag">Игра №5</span>
+                        <h3 class="game-card__title">Простая <br>викторина</h3>
+                    </div>
+                </a>
+
+                <a href="#game-6" class="game-card">
+                    <img src="img/game-6.png" alt="Генератор случайных цветов" class="game-card__img">
+                    <div class="game-card__content">
+                        <span class="game-card__tag">Игра №6</span>
+                        <h3 class="game-card__title">Генератор <br>случайных <br>цветов</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
