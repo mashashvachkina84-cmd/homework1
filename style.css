@@ -84,6 +84,10 @@ body {
     vertical-align: middle;
 }
 
+.mob-br {
+    display: none;
+}
+
 .header__button {
     display: inline-flex;
     justify-content: center;
@@ -191,10 +195,401 @@ body {
     font-size: 16px;
     line-height: 110%;
     margin-bottom: 16px;
+    color: #202027;
 }
 
 .game-card__title {
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
+    color: #202027;
+}
+
+.mini-games {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 46px 120px 144px 120px;
+    background-image: 
+        url('img/games-star-small-1.svg'),
+        url('img/games-star-small-2.svg');
+    background-repeat: no-repeat;
+    background-position: 
+        right 124px top 93px,
+        right 52px top 126px;
+}
+
+.mini-games__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    margin-bottom: 72px;
+}
+
+.mini-games__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mini-card {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    background-color: #FFFFFF;
+    color: #202027;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+}
+
+.mini-card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.mini-card:nth-child(even) {
+    flex-direction: row;
+}
+
+.mini-card__img {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.mini-card__content {
+    width: 50%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mini-card__title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0px;
+    color: #202027;
+    margin-bottom: 24px;
+}
+
+.mini-card__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #202027;
+    margin-bottom: 36px;
+}
+
+.mini-card__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 247px;
+    height: 66px;
+    background-color: #202027;
+    color: #FFFFFF;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 142%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mini-card__button:hover {
+    background-color: #FFFFFF;
+    color: #202027;
+}
+
+@media (max-width: 1200px) {
+    .center {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .header {
+        padding: 140px 32px 160px 32px;
+        background-position:
+            right -100px top -40px,
+            40px 60px,
+            120px 45px,
+            85% 85%,
+            92% 90%;
+        background-size:
+            420px auto,
+            auto,
+            auto,
+            auto,
+            auto;
+    }
+
+    .header__title {
+        font-size: 52px;
+        line-height: 64px;
+        white-space: normal;
+    }
+
+    .header__title br {
+        display: none;
+    }
+
+    .header__text,
+    .header__text-bold {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .games {
+        padding: 72px 32px 64px 32px;
+        background-position:
+            right -80px top 40px,
+            16px 85%,
+            30px 90%;
+    }
+
+    .games__title {
+        font-size: 52px;
+        line-height: 64px;
+    }
+
+    .games__description {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 48px;
+    }
+
+    .games__description br {
+        display: none;
+    }
+
+    .games__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .game-card__title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .mini-games {
+        padding: 48px 32px 80px 32px;
+        background-position:
+            right 40px top 40px,
+            right 20px top 75px;
+    }
+
+    .mini-games__title {
+        font-size: 52px;
+        line-height: 64px;
+        margin-bottom: 48px;
+    }
+
+    .mini-card,
+    .mini-card:nth-child(odd),
+    .mini-card:nth-child(even) {
+        flex-direction: column;
+        min-height: auto;
+        height: auto;
+    }
+
+    .mini-card__img {
+        width: 100%;
+        height: 360px;
+    }
+
+    .mini-card__content {
+        width: 100%;
+        padding: 36px 36px 40px 36px;
+    }
+
+    .mini-card__title {
+        font-size: 40px;
+        line-height: 49px;
+        margin-bottom: 20px;
+    }
+
+    .mini-card__text {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 32px;
+    }
+
+    .mini-card__title br,
+    .mini-card__text br {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        min-height: 700px;
+        background-color: #E1FF8F;
+        color: #202027;
+        padding: 147px 16px 182px 17px;
+        text-align: center;
+        background-image: 
+            url('img/header-stars.svg'),
+            url('img/star-1.svg'),
+            url('img/star-2.svg'),
+            url('img/star-3.svg'),
+            url('img/star-4.svg');
+        background-repeat: no-repeat;
+        background-position:
+            right -12px top -42px,   /* 1. Большая звезда справа сверху */
+            37px 97px,               /* 2. Левая зелёная звезда */
+            91px 64px,               /* 3. Левая маленькая звезда */
+            right 85px bottom 125px, /* 4. Потерявшаяся маленькая звезда (18x18) */
+            right 34px bottom 79px;  /* 5. Нижняя правая звезда (39x41) */
+        background-size:
+            245px auto,
+            35px auto,
+            21px auto,
+            18px 18px,
+            39px auto;
+    }
+
+    .header__content {
+        max-width: 343px;
+        margin: 0 auto;
+    }
+
+    .header__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        white-space: normal;
+        margin-bottom: 24px;
+    }
+
+    .header__title br,
+    .mob-br {
+        display: inline;
+    }
+
+    .header__text br {
+        display: none;
+    }
+
+    .header__text .mob-br {
+        display: inline;
+    }
+
+    .header__text,
+    .header__text-bold {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .header__text {
+        margin-bottom: 36px;
+    }
+
+    .header__button {
+        width: 285px;
+        height: 55px;
+        padding: 16px 28px;
+        font-size: 16px;
+        line-height: 142%;
+    }
+
+    .header__button:hover {
+        background-color: #202027;
+        color: #FFFFFF;
+    }
+ 
+    .games {
+        display: none;
+    }
+
+    .mini-games {
+        padding: 48px 16px 48px 16px;
+        background-image: none;
+    }
+    .mini-games__title {
+        font-weight: 700;
+        font-size: 40px;
+
+        line-height: 49px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+
+    .mini-games__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .mini-card {
+        width: 100%;
+        max-width: 343px;
+        margin: 0 auto;
+        height: auto;
+        min-height: auto;
+        border-radius: 30px;
+    }
+
+    .mini-card__img {
+        width: 100%;
+        height: 284.93px;
+        object-fit: cover;
+    }
+
+    .mini-card__content {
+        width: 100%;
+        padding: 29px 29px 32.67px 29px;
+    }
+
+    .mini-card__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        color: #202027;
+        margin-bottom: 16px;
+    }
+
+    .mini-card__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #202027;
+        margin-bottom: 32px;
+    }
+
+    .mini-card__title br,
+    .mini-card__text br {
+        display: none;
+    }
+
+    .mini-card__button {
+        width: 100%;
+        max-width: 285px;
+        height: 55px;
+        padding: 16px 28px;
+        background-color: #202027;
+        color: #FFFFFF;
+        border: 1px solid #202027;
+        border-radius: 60px;
+        font-size: 16px;
+        line-height: 142%;
+    }
+
+    .mini-card__button:hover {
+        background-color: #202027;
+        color: #FFFFFF;
+    }
 }

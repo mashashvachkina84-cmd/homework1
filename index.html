@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__content">
-            <h1 class="header__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
-            <p class="header__text">
-                Тебе предстоит пройти несколько увлекательных игр. <br>
-                Если готов, нажимай <span class="header__text-bold">«Поехали!»</span> и <span class="header__text-bold">приступай</span>.
-            </p>
-            <a href="#games" class="header__button">Поехали!</a>
-        </div>
-    </header>
+<header class="header">
+    <div class="header__content">
+        <h1 class="header__title">
+            Добро <br class="mob-br">пожаловать <br>на мой сайт <br class="mob-br">мини-игр
+        </h1>
+        <p class="header__text">
+            Тебе предстоит пройти несколько увлекательных игр. <br>
+            Если готов, <br class="mob-br">нажимай <span class="header__text-bold">«Поехали!»</span> и <span class="header__text-bold">приступай</span>.
+        </p>
+        <a href="#mini-games" class="header__button">Поехали!</a>
+    </div>
+</header>
 
     <main>
         <section class="games center" id="games">
@@ -80,6 +82,62 @@
                 </a>
             </div>
         </section>
+        <section class="mini-games" id="mini-games">
+            <h2 class="mini-games__title">Мини-игры</h2>
+
+            <div class="mini-games__list">
+
+                <article class="mini-card">
+                    <img src="img/game-1.png" alt="Угадай число" class="mini-card__img">
+                    <div class="mini-card__content">
+                        <h3 class="mini-card__title">Угадай число</h3>
+                        <p class="mini-card__text">Попробуй угадать случайное <br>число от 1 до 100.</p>
+                        <button class="mini-card__button" type="button">Играть!</button>
+                    </div>
+                </article>
+                <article class="mini-card">
+                    <img src="img/game-2.png" alt="Простая арифметика" class="mini-card__img">
+                    <div class="mini-card__content">
+                        <h3 class="mini-card__title">Простая <br>арифметика</h3>
+                        <p class="mini-card__text">Попробуй решить простые <br>арифметические задачи.</p>
+                        <button class="mini-card__button" type="button">Играть!</button>
+                    </div>
+                </article>
+                <article class="mini-card">
+                    <img src="img/game-3.png" alt="Переверни текст" class="mini-card__img">
+                    <div class="mini-card__content">
+                        <h3 class="mini-card__title">Переверни текст</h3>
+                        <p class="mini-card__text">Попробуй ввести текст, который <br>будет перевернут.</p>
+                        <button class="mini-card__button" type="button">Играть!</button>
+                    </div>
+                </article>
+                <article class="mini-card">
+                    <img src="img/game-4.png" alt="Камень, ножницы, бумага" class="mini-card__img">
+                    <div class="mini-card__content">
+                        <h3 class="mini-card__title">Камень, <br>ножницы, <br>бумага</h3>
+                        <p class="mini-card__text">Сыграй в популярную игру <br>против компьютера.</p>
+                        <button class="mini-card__button" type="button">Играть!</button>
+                    </div>
+                </article>
+                <article class="mini-card">
+                    <img src="img/game-5.png" alt="Простая викторина" class="mini-card__img">
+                    <div class="mini-card__content">
+                        <h3 class="mini-card__title">Простая <br>викторина</h3>
+                        <p class="mini-card__text">Отвечай на вопросы викторины <br>с вариантами ответов.</p>
+                        <button class="mini-card__button" type="button">Играть!</button>
+                    </div>
+                </article>
+                <article class="mini-card">
+                    <img src="img/game-6.png" alt="Генератор случайных цветов" class="mini-card__img">
+                    <div class="mini-card__content">
+                        <h3 class="mini-card__title">Генератор <br>случайных <br>цветов</h3>
+                        <p class="mini-card__text">Игра, в которой при клике на кнопку <br>фон страницы меняется на случайный.</p>
+                        <button class="mini-card__button" type="button">Играть!</button>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+    <script src="hw-1.js"></script>
 </body>
 </html>
