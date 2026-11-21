@@ -37,7 +37,7 @@ alert(age);
 
 const user = {
     name: 'Мария',
-    age: '42',
+    age: 42,
     isAdmin: true
 };
 
@@ -58,4 +58,4 @@ alert(divisionTwo);
 let finalResult = divisionTwo - number;
 alert(finalResult);
 
-alert('Ответ равен ${finalResult}');
+alert(`Ответ равен ${finalResult}`);
