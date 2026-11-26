@@ -75,7 +75,7 @@ body {
     margin-bottom: 48px;
 }
 
-.header__text-bold {
+.header__text_bold {
     font-weight: 600;
     font-style: normal;
     font-size: 24px;
@@ -84,7 +84,7 @@ body {
     vertical-align: middle;
 }
 
-.mob-br {
+.header__br_mobile {
     display: none;
 }
 
@@ -212,11 +212,15 @@ body {
     padding: 46px 120px 144px 120px;
     background-image: 
         url('img/games-star-small-1.svg'),
-        url('img/games-star-small-2.svg');
+        url('img/games-star-small-2.svg'),
+        url('img/games-star-small-3.svg'),
+        url('img/games-star-small-4.svg');
     background-repeat: no-repeat;
     background-position: 
         right 124px top 93px,
-        right 52px top 126px;
+        right 52px top 126px,
+        right 65px bottom 65px,
+        right 151px bottom 45px;
 }
 
 .mini-games__title {
@@ -309,6 +313,28 @@ body {
     color: #202027;
 }
 
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+    background-color: #BDED35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.footer__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+}
+
 @media (max-width: 1200px) {
     .center {
         padding-left: 32px;
@@ -342,7 +368,7 @@ body {
     }
 
     .header__text,
-    .header__text-bold {
+    .header__text_bold {
         font-size: 20px;
         line-height: 28px;
     }
@@ -429,6 +455,8 @@ body {
     }
 }
 
+
+
 @media (max-width: 767px) {
     .center {
         padding-left: 16px;
@@ -449,11 +477,11 @@ body {
             url('img/star-4.svg');
         background-repeat: no-repeat;
         background-position:
-            right -12px top -42px,   /* 1. Большая звезда справа сверху */
-            37px 97px,               /* 2. Левая зелёная звезда */
-            91px 64px,               /* 3. Левая маленькая звезда */
-            right 85px bottom 125px, /* 4. Потерявшаяся маленькая звезда (18x18) */
-            right 34px bottom 79px;  /* 5. Нижняя правая звезда (39x41) */
+            right -12px top -42px,
+            37px 97px,
+            91px 64px,
+            right 85px bottom 125px,
+            right 34px bottom 79px;
         background-size:
             245px auto,
             35px auto,
@@ -476,7 +504,7 @@ body {
     }
 
     .header__title br,
-    .mob-br {
+    .header__br_mobile {
         display: inline;
     }
 
@@ -484,12 +512,12 @@ body {
         display: none;
     }
 
-    .header__text .mob-br {
-        display: inline;
-    }
+.header__text .header__br_mobile {
+    display: inline;
+}
 
     .header__text,
-    .header__text-bold {
+    .header__text_bold {
         font-size: 16px;
         line-height: 20px;
     }
@@ -516,13 +544,12 @@ body {
     }
 
     .mini-games {
-        padding: 48px 16px 48px 16px;
+        padding: 48px 16px 10px 16px;
         background-image: none;
     }
     .mini-games__title {
         font-weight: 700;
         font-size: 40px;
-
         line-height: 49px;
         color: #FFFFFF;
         margin-bottom: 24px;
@@ -591,5 +618,14 @@ body {
     .mini-card__button:hover {
         background-color: #202027;
         color: #FFFFFF;
+    }
+
+    .footer {
+        height: 100px;
+    }
+
+    .footer__text {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
